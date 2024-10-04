@@ -11,13 +11,13 @@ import { SetShippingAddressOrderService } from 'src/order/application/use-case/s
 import OrderRepositoryTypeOrm from 'src/order/infrastructure/persistance/order.repository';
 import { OrderRepositoryInterface } from 'src/order/domain/port/persistance/order.repository.interface';
 import { GenerateInvoiceService } from 'src/order/application/use-case/generate-invoice.service';
-import { PdfGeneratorServiceInterface } from 'src/common/pdf/pdf-generator.service.interface';
-import { PdfGeneratorService } from 'src/common/pdf/pdf-generator.service';
-import { MailerServiceInterface } from '../common/mailer/mailer.service.interface';
+import { PdfGeneratorServiceInterface } from 'src/common/port/persistance/pdf/pdf-generator.service.interface';
+import { PdfGeneratorService } from 'src/common/infrastructure/pdf/pdf-generator.service';
 import { AddItemToOrderService } from './application/use-case/add-item-to-order.service';
 import { DiscountRepositoryInterface } from 'src/discount/domain/port/persistance/discount.repository.interface';
 import DiscountRepositoryTypeOrm from 'src/discount/infrastructure/persistance/discount.repository';
-import { MailerService } from 'src/common/mailer/mailer.service';
+import { MailerService } from 'src/common/infrastructure/mailer/mailer.service';
+import { MailerServiceInterface } from 'src/common/port/persistance/mailer/mailer.service.interface';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Order, OrderItem])],

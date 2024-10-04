@@ -1,6 +1,6 @@
 import { ItemDetailCommand } from "src/order/domain/entity/order-item.entity";
-import { ProductRepositoryInterface } from "../../product/domain/port/product.repository.interface";
-import { MailerServiceInterface } from "../mailer/mailer.service.interface";
+import { ProductRepositoryInterface } from "../../../product/domain/port/product.repository.interface";
+import { MailerServiceInterface } from "src/common/port/persistance/mailer/mailer.service.interface";
 
 export class MailerService implements MailerServiceInterface {
     constructor(private readonly productRepository: ProductRepositoryInterface) {}

@@ -1,4 +1,4 @@
-import { ItemDetailCommand } from "../../order/domain/entity/order-item.entity";
+import { ItemDetailCommand } from "src/order/domain/entity/order-item.entity";
 
 export interface MailerServiceInterface {
     execute(items: ItemDetailCommand[] | ItemDetailCommand): Promise<void>;

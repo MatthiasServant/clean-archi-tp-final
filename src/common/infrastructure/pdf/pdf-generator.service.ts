@@ -1,4 +1,4 @@
-import { PdfGeneratorServiceInterface } from 'src/common/pdf/pdf-generator.service.interface';
+import { PdfGeneratorServiceInterface } from 'src/common/port/persistance/pdf/pdf-generator.service.interface';
 
 export class PdfGeneratorService implements PdfGeneratorServiceInterface {
   async generatePdf(text: string): Promise<Buffer> {

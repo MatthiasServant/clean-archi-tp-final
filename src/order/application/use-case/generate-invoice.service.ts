@@ -1,4 +1,4 @@
-import { PdfGeneratorServiceInterface } from 'src/common/pdf/pdf-generator.service.interface';
+import { PdfGeneratorServiceInterface } from 'src/common/port/persistance/pdf/pdf-generator.service.interface';
 import { OrderRepositoryInterface } from 'src/order/domain/port/persistance/order.repository.interface';
 
 export class GenerateInvoiceService {
